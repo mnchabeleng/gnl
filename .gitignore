@@ -3,3 +3,5 @@ libft.a
 *.o
 *.swp
 .DS_Store
+main.c
+a.out
