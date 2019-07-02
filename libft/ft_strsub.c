@@ -14,21 +14,10 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char	*ft_s;
-	size_t	i;
+	char	*result;
 
-	if (!s || start > ft_strlen(s))
-		return (0);
-	ft_s = ft_strnew(len);
-	if (!ft_s)
-		return (0);
-	i = 0;
-	while (s[start] && i < len)
-	{
-		ft_s[i] = s[start];
-		start++;
-		i++;
-	}
-	ft_s[i] = '\0';
-	return (ft_s);
+	if (!s || !(result = ft_memalloc(len + 1)))
+		return (NULL);
+	result = ft_strncpy(result, (char*)s + start, len);
+	return (result);
 }
