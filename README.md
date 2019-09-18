@@ -14,3 +14,7 @@
 ### For testing
 
 - #### [42FileChecker](https://github.com/jgigault/42FileChecker)
+
+### get_next_line functions
+
+- int	get_next_line(const int fd, char **line);
