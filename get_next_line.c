@@ -31,7 +31,7 @@ int	get_next_line(const int fd, char **line)
 	}
 	if (ret == -1 || !*(temp = file[fd]))
 		return (ret == -1 ? -1 : 0);
-	if ((endl = (ft_strchr(file[fd], '\n') > 0)))
+	if ((endl = (int)(ft_strchr(file[fd], '\n') > 0)))
 		*line = ft_strsub(file[fd], 0, ft_strchr(file[fd], '\n') - file[fd]);
 	else
 		*line = ft_strdup(file[fd]);

@@ -1,8 +1,10 @@
 .vscode
 libft.a
+libgnl.a
 *.o
 *.swp
 .DS_Store
 a.out
 test_gnl
-/Makefile
+Makefile
+main.c
